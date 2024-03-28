@@ -4,6 +4,8 @@
   "description": "simple and efficient lightweight toasts for react that are very easy to use",
   "main": "src/index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --copy-files",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,18 @@
   "bugs": {
     "url": "https://github.com/amey-kudari/toast5/issues"
   },
-  "homepage": "https://github.com/amey-kudari/toast5#readme"
+  "homepage": "https://github.com/amey-kudari/toast5#readme",
+  "dependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.22",
+    "react": "^18.2.0",
+    "typescript": "^5.4.3"
+  },
+  "types": "./dist/types/index.d.ts"
 }
