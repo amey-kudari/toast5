@@ -1,0 +1,27 @@
+{
+  "name": "toast5",
+  "version": "1.0.0",
+  "description": "simple and efficient lightweight toasts for react that are very easy to use",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amey-kudari/toast5.git"
+  },
+  "keywords": [
+    "Toast",
+    "Toasts",
+    "React-Toast",
+    "Toast5",
+    "toast5",
+    "toast"
+  ],
+  "author": "amey-kudari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amey-kudari/toast5/issues"
+  },
+  "homepage": "https://github.com/amey-kudari/toast5#readme"
+}
