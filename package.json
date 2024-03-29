@@ -2,7 +2,7 @@
   "name": "toast5",
   "version": "1.0.0",
   "description": "simple and efficient lightweight toasts for react that are very easy to use",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --copy-files && npx -p typescript tsc --declaration --allowJs --emitDeclarationOnly --outDir dist",
     "prepublishOnly": "npm run build",
