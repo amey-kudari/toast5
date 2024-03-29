@@ -38,9 +38,20 @@
   },
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@chromatic-com/storybook": "^1.2.25",
+    "@storybook/addon-essentials": "^8.0.5",
+    "@storybook/addon-interactions": "^8.0.5",
+    "@storybook/addon-links": "^8.0.5",
+    "@storybook/addon-onboarding": "^8.0.5",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.5",
+    "@storybook/react": "^8.0.5",
+    "@storybook/react-webpack5": "^8.0.5",
+    "@storybook/test": "^8.0.5",
     "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.22",
-    "typescript": "^5.4.3",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "storybook": "^8.0.5",
+    "typescript": "^5.4.3"
   }
 }
