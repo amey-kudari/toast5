@@ -4,9 +4,11 @@
   "description": "simple and efficient lightweight toasts for react that are very easy to use",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --copy-files",
+    "build": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --copy-files && npx -p typescript tsc --declaration --allowJs --emitDeclarationOnly --outDir dist",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -32,11 +34,13 @@
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.11.30"
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
     "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.22",
-    "react": "^18.2.0",
-    "typescript": "^5.4.3"
-  },
-  "types": "./dist/types/index.d.ts"
+    "typescript": "^5.4.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }

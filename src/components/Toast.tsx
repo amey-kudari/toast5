@@ -1,15 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // constants
 import { TOAST_VARIANTS } from "../constants";
 
-// styles
-import "./toast.css";
+// images
+import CheckedIcon from "../icons/checked.png";
+import InformationIcon from "../icons/information.png";
+import ExclamationIcon from "../icons/exclamation.png";
+import CrossIcon from "../icons/x.png";
 
 const VARIANT_TO_ICON = {
-  [TOAST_VARIANTS.ERROR]: "/exclamation.png",
-  [TOAST_VARIANTS.INFO]: "/information.png",
-  [TOAST_VARIANTS.SUCCESS]: "/checked.png",
+  [TOAST_VARIANTS.ERROR]: ExclamationIcon,
+  [TOAST_VARIANTS.INFO]: InformationIcon,
+  [TOAST_VARIANTS.SUCCESS]: CheckedIcon,
 };
 
 export const Toast = ({
@@ -63,19 +66,24 @@ export const Toast = ({
           width: "2rem",
         }}
       />
-      <p>{message}</p>
+      <p style={{ margin: "0px", fontFamily: "Arial, sans-serif", flex: 1 }}>
+        {message}
+      </p>
       <button
-        className="styledButton"
-        style={{ padding: "0.5rem", borderRadius: "0.5rem" }}
+        style={{
+          padding: "0.5rem",
+          borderRadius: "0.5rem",
+          border: 0,
+          backgroundColor: options.backgroundColor,
+          cursor: "pointer",
+        }}
         title="hide"
         onClick={() => deleteToast({ message })}
       >
         <img
-          src="/X.png"
-          width={30}
-          height={30}
+          src={CrossIcon}
           alt="Remove Popup"
-          style={{ filter: "invert(1)" }}
+          style={{ filter: "invert(1)", width: "1rem" }}
         />
       </button>
       <div

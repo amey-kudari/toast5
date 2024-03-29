@@ -1,4 +1,4 @@
-import { forwardRef, createContext, Ref, ComponentType } from "react";
+import React, { forwardRef, createContext, Ref, ComponentType } from "react";
 
 // hooks
 import { useToastData } from "./hooks/useToastData";

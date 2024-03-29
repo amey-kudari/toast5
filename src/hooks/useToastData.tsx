@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 
 // constants
 import { DEFAULT_VARIANT, DEFAULT_TOAST_DURATION } from "../constants";
