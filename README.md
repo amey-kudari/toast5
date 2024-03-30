@@ -8,7 +8,7 @@ npm i toast5
 ```
 
 ### BASIC USAGE
-At the root directory of your application, or the last parent component that will be using using toasts, wrap the component with out hoc `withToast5`,
+At the root directory of your application, or the last parent component that will be using using toasts, wrap the component with hoc `withToast5`,
 ```typescript
 import React from "react";
 
@@ -19,7 +19,7 @@ function App() {
   return <Child />;
 }
 
-// Wrap with custom hook
+// Wrap with hoc
 export default withToast5(App);
 ```
 
